@@ -13,3 +13,8 @@ for var in "all_proxy" "ftp_proxy" "http_proxy" "https_proxy" "no_proxy";do
       echo "export $var" >> /etc/profile
 done
 source /etc/profile
+
+#export_proxy
+export ftp_proxy=http://192.168.2.250:3128 
+export http_proxy=http://192.168.2.250:3128
+export https_proxy=http://192.168.2.250:3128
