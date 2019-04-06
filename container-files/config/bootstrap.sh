@@ -14,7 +14,7 @@ chmod 711 /data/conf /data/run /data/logs
 
 if [ "$(ls /config/init/)" ]; then
   for init in /config/init/*.sh; do
-    chmod +x /entrypoint.sh \
+    chmod +x . $init \
     && . $init
   done
 fi
