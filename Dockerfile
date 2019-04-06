@@ -50,6 +50,5 @@ RUN \
   
 # Add supervisord conf, bootstrap.sh files
 COPY container-files /
-EXPOSE 22 9001 8888 888 21 20 443 80 3456 2345
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
+EXPOSE 22 9001 8888 888 21 20 443 80 3456 2345 9000 9001 
 ENTRYPOINT ["/config/bootstrap.sh"]
