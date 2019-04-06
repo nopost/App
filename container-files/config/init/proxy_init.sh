@@ -1,8 +1,4 @@
 #!/bin/bash
-#export_proxy
-export ftp_proxy=http://192.168.2.250:3128 
-export http_proxy=http://192.168.2.250:3128
-export https_proxy=http://192.168.2.250:3128
 #profile_proxy
 all_proxy="all_proxy=socks://192.168.2.250:1080"
 ftp_proxy="ftp_proxy=http://192.168.2.250:3128"
