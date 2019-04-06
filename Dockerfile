@@ -34,7 +34,19 @@ RUN \
   mkdir -p /root/.ssh && \  
   chown root.root /root && \  
   chmod 700 /root/.ssh && \    
-  echo 'root:nopost' | chpasswd
+  echo 'root:nopost' | chpasswd  && \    
+  mkdir -p /www/letsencrypt  && \  
+  ln -s /www/letsencrypt /etc/letsencrypt && \  
+  rm -f /etc/init.d && \  
+  mkdir /www/init.d && \  
+  ln -s /www/init.d /etc/init.d && \ 
+  cd /home && \  
+  wget -O install.sh http://download.bt.cn/install/install_6.0.sh  && \  
+  echo y | bash install.sh && \
+  cd /www/server/panel && \ 
+     bash ./install/install_soft.sh 1 install nginx 1.15 && \ 
+     bash ./install/install_soft.sh 1 install php 7.3 && \ 
+  echo '["linuxsys", "nginx", "php-7.3"]' > ./config/index.json 
   
 # Add supervisord conf, bootstrap.sh files
 COPY container-files /
