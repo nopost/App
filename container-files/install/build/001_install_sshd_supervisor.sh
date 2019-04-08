@@ -1,6 +1,6 @@
 #!/bin/bash
-mkdir -p /var/run/sshd && \
-yum update -y && \
+#mkdir -p /var/run/sshd && \
+#yum update -y && \
 yum install -y \
     iproute \
     python-setuptools \
