@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir -p /var/run/sshd && \
 yum update -y && \
 yum install -y \
