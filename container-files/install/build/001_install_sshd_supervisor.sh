@@ -24,4 +24,3 @@ mkdir -p /root/.ssh && \
 chown root.root /root && \  
 chmod 700 /root/.ssh && \    
 echo 'root:nopost' | chpasswd
-EXPOSE 22 9001
