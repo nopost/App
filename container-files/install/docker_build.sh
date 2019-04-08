@@ -5,3 +5,4 @@ if [ "$(ls /install/build/)" ]; then
     && . $build
   done
 fi
+rm /install -rf
