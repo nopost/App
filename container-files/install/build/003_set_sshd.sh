@@ -1,4 +1,5 @@
 #!/bin/bash
+export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin
 ssh-keygen -q -N "" -t dsa -f /etc/ssh/ssh_host_dsa_key && \ 
 ssh-keygen -q -N "" -t rsa -f /etc/ssh/ssh_host_rsa_key && \ 
 ssh-keygen -q -N "" -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key && \ 
