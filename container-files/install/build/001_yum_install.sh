@@ -11,6 +11,9 @@ yum install -y \
     wget \
     net-tool \
     jq \
+    openssl \
     openssh-server \
     openssh-clients \
-    rsync
+    rsync \
+    initscripts \
+    telnet
